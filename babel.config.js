@@ -7,10 +7,11 @@ module.exports = function (api) {
         "module-resolver",
         {
           alias: {
-            img: "./App/img",
-            screen: "./App/screen",
-            hooks: "./App/hooks",
-            config: "./App/Config",
+            img: "./src/img",
+            screen: "./src/screen",
+            hooks: "./src/hooks",
+            config: "./src/config",
+            components: "./src/components",
           },
         },
       ],
