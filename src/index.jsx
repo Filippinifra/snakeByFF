@@ -7,7 +7,7 @@ import { SnakeConfigScreen } from "screen/SnakeConfigScreen";
 
 const Stack = createStackNavigator();
 
-const App = () => (
+export const Code = () => (
   <NavigationContainer>
     <Stack.Navigator initialRouteName="SnakeHome">
       <Stack.Screen
@@ -29,5 +29,3 @@ const App = () => (
     </Stack.Navigator>
   </NavigationContainer>
 );
-
-export default App;

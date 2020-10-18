@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 
 import { Dimensions } from "react-native";
-import { N_COL, N_ROW } from "screen/SnakeScreen/snakeConfig";
+import { N_COL, N_ROW } from "config/snakeConfig";
 import { RowWrapper, Square } from "./styles";
 
 const Board = ({ headPosition, applePosition, tail }) => {

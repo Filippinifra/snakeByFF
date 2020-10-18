@@ -1,5 +1,5 @@
 import { swipeDirections } from "react-native-swipe-gestures";
-import { N_COL, N_ROW } from "screen/SnakeScreen/snakeConfig";
+import { N_COL, N_ROW } from "config/snakeConfig";
 import _ from "lodash";
 import { AsyncStorage } from "react-native";
 

@@ -13,7 +13,7 @@ import {
   INITIAL_SPEED,
   INITAL_DIRECTION,
   INITAL_POSITION,
-} from "screen/SnakeScreen/snakeConfig";
+} from "config/snakeConfig";
 import { useInterval } from "hooks/useInterval";
 import {
   getRandomFreeBox,
@@ -33,7 +33,6 @@ import {
   LogoImg,
   MiddleContainer,
   PoweredLabel,
-  SafeArea,
   ScoreText,
   TopContainer,
   RightTopContainer,

@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import { N_COL, N_ROW } from "screen/SnakeScreen/snakeConfig";
 import {
   APPLE_COLOR,
   HEAD_COLOR,
   SQUARE_COLOR,
   TAIL_COLOR,
-} from "screen/SnakeScreen/snakeConfig";
+  N_COL,
+  N_ROW,
+} from "config/snakeConfig";
 
 export const RowWrapper = styled.View`
   flex-direction: row;
