@@ -1,12 +1,5 @@
 import styled from "styled-components";
-import {
-  APPLE_COLOR,
-  HEAD_COLOR,
-  SQUARE_COLOR,
-  TAIL_COLOR,
-  N_COL,
-  N_ROW,
-} from "config/snakeConfig";
+import { SQUARE_COLOR, BORDER_COLOR, N_COL, N_ROW } from "config/snakeConfig";
 
 export const RowWrapper = styled.View`
   flex-direction: row;
@@ -15,16 +8,23 @@ export const RowWrapper = styled.View`
 `;
 
 export const Square = styled.View`
-  border-color: lightgray;
+  border-color: ${BORDER_COLOR};
   border-width: 1px;
   width: ${({ smallestSize }) => Math.trunc(smallestSize / N_COL)}px;
   height: ${({ smallestSize }) => Math.trunc(smallestSize / N_ROW)}px;
-  background-color: ${({ isHeadBox, isAppleBox, isTailBox }) =>
+  background-color: ${({
+    isHeadBox,
+    isAppleBox,
+    isTailBox,
+    headColor,
+    tailColor,
+    appleColor,
+  }) =>
     isHeadBox
-      ? HEAD_COLOR
+      ? headColor
       : isAppleBox
-      ? APPLE_COLOR
+      ? appleColor
       : isTailBox
-      ? TAIL_COLOR
+      ? tailColor
       : SQUARE_COLOR};
 `;

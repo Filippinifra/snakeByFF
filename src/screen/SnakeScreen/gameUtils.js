@@ -89,6 +89,8 @@ export const storeScore = async (score) => {
 export const getScore = async (setHighScore) => {
   try {
     const score = await AsyncStorage.getItem("highScore");
-    setHighScore(score);
-  } catch (error) {}
+    setHighScore(JSON.parse(score));
+  } catch (error) {
+    console.log(error);
+  }
 };

@@ -109,7 +109,12 @@ const SnakeScreen = () => {
     }
   };
 
-  useEffect(() => {});
+  const onPressSetting = () => {
+    navigation.push("SnakeConfig");
+    if (!pause) {
+      setPause(true);
+    }
+  };
 
   useInterval(newTurn, pause ? null : speed);
 
@@ -166,11 +171,7 @@ const SnakeScreen = () => {
         </LogoContainer>
       </BottomContainer>
       <RightTopContainer>
-        <Icon
-          name="settings"
-          size={30}
-          onPress={() => navigation.push("SnakeConfig")}
-        />
+        <Icon name="settings" size={30} onPress={onPressSetting} />
       </RightTopContainer>
     </GestureRecognizer>
   );
