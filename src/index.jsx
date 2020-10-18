@@ -17,6 +17,9 @@ export const Code = () => (
           headerStyle: { backgroundColor: "#007df7", height: "auto" },
           title: null,
           headerLeft: null,
+          headerLeftContainerStyle: { height: 0 },
+          headerRightContainerStyle: { height: 0 },
+          headerTitleContainerStyle: { height: 0 },
         }}
       />
       <Stack.Screen
@@ -26,6 +29,9 @@ export const Code = () => (
           headerStyle: { backgroundColor: "#007df7", height: "auto" },
           title: null,
           headerLeft: null,
+          headerLeftContainerStyle: { height: 0 },
+          headerRightContainerStyle: { height: 0 },
+          headerTitleContainerStyle: { height: 0 },
         }}
       />
     </Stack.Navigator>
