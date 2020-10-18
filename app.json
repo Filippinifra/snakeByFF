@@ -4,9 +4,9 @@
     "slug": "snakeByFF",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./App/img/icon.png",
+    "icon": "./src/img/icon.png",
     "splash": {
-      "image": "./App/img/splash.png",
+      "image": "./src/img/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,7 +18,7 @@
       "supportsTablet": true
     },
     "web": {
-      "favicon": "./App/img/favicon.png"
+      "favicon": "./src/img/favicon.png"
     }
   }
 }
