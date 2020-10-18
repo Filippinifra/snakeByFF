@@ -16,6 +16,7 @@ export const Code = () => (
         options={{
           headerStyle: { backgroundColor: "#007df7", height: "auto" },
           title: null,
+          headerLeft: null,
         }}
       />
       <Stack.Screen
@@ -24,6 +25,7 @@ export const Code = () => (
         options={{
           headerStyle: { backgroundColor: "#007df7", height: "auto" },
           title: null,
+          headerLeft: null,
         }}
       />
     </Stack.Navigator>
