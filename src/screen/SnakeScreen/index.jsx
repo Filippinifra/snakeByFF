@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import GestureRecognizer from "react-native-swipe-gestures";
 import _ from "lodash";
-import { Board } from "screen/SnakeScreen/Board";
+import { Board } from "components/Board";
 import {
   INITIAL_SPEED,
   INITAL_DIRECTION,

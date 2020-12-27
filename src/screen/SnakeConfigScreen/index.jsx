@@ -1,12 +1,12 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Text, AsyncStorage } from "react-native";
-import { AVAILABLE_COLORS } from "config/snakeConfig";
 import { ChoiceWrapper, DropdownColor, Wrapper, IconArrow } from "./styles";
 import _ from "lodash";
 import {
   INITIAL_APPLE_COLOR,
   INITIAL_HEAD_COLOR,
   INITIAL_TAIL_COLOR,
+  AVAILABLE_COLORS,
 } from "config/snakeConfig";
 import { View } from "react-native";
 import { useNavigation } from "@react-navigation/native";

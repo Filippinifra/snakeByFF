@@ -1,5 +1,5 @@
 import React from "react";
-import { SnakeScreen } from "./screen/SnakeScreen";
+import { SnakeScreen } from "screen/SnakeScreen";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
