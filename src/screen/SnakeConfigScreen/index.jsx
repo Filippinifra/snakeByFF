@@ -1,13 +1,16 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Text, AsyncStorage } from "react-native";
 import { AVAILABLE_COLORS } from "config/snakeConfig";
-import { ChoiceWrapper, DropdownColor, Wrapper } from "./styles";
+import { ChoiceWrapper, DropdownColor, Wrapper, IconArrow } from "./styles";
 import _ from "lodash";
 import {
   INITIAL_APPLE_COLOR,
   INITIAL_HEAD_COLOR,
   INITIAL_TAIL_COLOR,
 } from "config/snakeConfig";
+import { View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 const getColor = async (setColor, element) => {
   try {
@@ -33,6 +36,8 @@ export const SnakeConfigScreen = () => {
   const [colorHead, setColorHead] = useState(INITIAL_HEAD_COLOR);
   const [colorTail, setColorTail] = useState(INITIAL_TAIL_COLOR);
   const [colorApple, setColorApple] = useState(INITIAL_APPLE_COLOR);
+
+  const navigation = useNavigation();
 
   useEffect(() => {
     getColor(setColorHead, "headColor");
@@ -65,6 +70,14 @@ export const SnakeConfigScreen = () => {
 
   return (
     <Wrapper>
+      <View style={{ position: "absolute", top: 10, left: 10 }}>
+        <TouchableOpacity
+          onPress={() => navigation.goBack()}
+          style={{ padding: 10 }}
+        >
+          <IconArrow name="chevron-left" color="#007df7" size={35} />
+        </TouchableOpacity>
+      </View>
       <Text style={{ marginBottom: 30, alignSelf: "center" }}>
         Customize your snake! Choose the color:
       </Text>

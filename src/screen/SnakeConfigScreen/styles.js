@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { Dropdown } from "components/Dropdown";
+import { Icon } from "react-native-elements";
+
+export const IconArrow = styled(Icon)``;
 
 export const Wrapper = styled.View`
   flex: 1;
